@@ -1,0 +1,93 @@
+/* ===========================
+   VARIABLES & RESET
+=========================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Arial,sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* ===========================
+   GENERAL STYLE
+=========================== */
+
+.completed {
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background-color: #222;
+    padding: 1rem;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+/* ===========================
+   FORMULAIRE
+=========================== */
+
+#task-form {
+    
+    margin: auto;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 30rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#task-form, label {
+    margin-bottom: 2rem;
+}
+
+#task-input {
+
+    font-size: 1.5rem;
+    text-align: center;
+
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    font-size: 1.5rem;
+    border-radius: 6px;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+/* ===========================
+   LISTE
+=========================== */
+
+#task-list {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
