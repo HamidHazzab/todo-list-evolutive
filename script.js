@@ -4,8 +4,29 @@ let task = document.querySelectorAll('.task')
 
 const taskList = document.getElementById('task-list')
 
+const formMessage = document.getElementById('formMessage');
+
+function showMessage(text, color, duration = 3000) {
+    formMessage.textContent = text;
+    formMessage.style.color = color;
+    formMessage.style.opacity = 1;
+
+    setTimeout(() => {
+        formMessage.style.opacity = 0;
+        setTimeout(() => {
+            formMessage.textContent = '';
+            formMessage.style.opacity = 1;
+        }, 500);
+    }, duration);
+}
+
 form.addEventListener('submit', (e) =>{
     e.preventDefault()
+    
+    if (taskInput.value.trim() === '' ) {
+        showMessage("Veuillez ajouter une tâche", "red")
+        return;
+    }
     
     // Création de la tâche
     let newTask = document.createElement('li')
@@ -34,7 +55,7 @@ form.addEventListener('submit', (e) =>{
        evt.stopPropagation()
        newTask.remove()
     })
-    
+
     // Réinitialisation de l'input
     taskInput.value = ''
 
