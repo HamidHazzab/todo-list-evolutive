@@ -110,6 +110,16 @@ button {
     transform: scale(1.05);
 }
 
+.task-delete {
+
+    max-width: 30rem;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
 /* ===========================
    footer
 =========================== */
